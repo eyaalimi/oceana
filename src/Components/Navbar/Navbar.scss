@@ -1,0 +1,222 @@
+:root {
+    --primaryColor: #3ab3a7;
+    --primaryHover: #0c988a;
+    --secondaryColor: #059789;
+    --secHoveerColor: #253b53;
+    --greyColor: #f7f7f7;
+}
+
+.headernav {
+    // position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    background: var(--primaryColor);
+    z-index: 2000;
+
+
+    .logoDiv {
+        .logo {
+            color:black;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: bold;
+           
+        }
+    }
+
+    @media screen and (max-width : 768px) {
+        .menuDiv {
+            background: var(--primaryColor);
+            position: absolute;
+            height: max-content;
+            width: 80%;
+            border-radius: 10px;
+            padding: 1rem;
+            top: -700%;
+            left: 50%;
+            transform: translate(-50%);
+            box-shadow: 0 2px 4px rgba (243, 243, 243, 0.904);
+            transition: .3s ease-in-out;
+            z-index: 3000;
+
+
+            .menuLists {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+                margin: auto;
+                padding: 1rem 0;
+               
+
+
+                .navItem {
+                    padding: .6rem 0;
+                    
+
+                    .menuLink {
+                        color: black;
+                        font-size: .9rem;
+                        font-weight: 500;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+                        &:hover {
+                            color: white;
+                        }
+
+                    }
+                }
+                .btn1{
+                    margin-top: 1rem;
+                    a{
+                        font-weight: 600;
+                        color: #f7f7f7;
+
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+
+            }
+
+            .closeNavbar {
+                color: black;
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+
+                .icon {
+                    font-size: 25px;
+                    
+                }
+
+                &:hover .icon {
+                    color: var(--secHoveerColor);
+                }
+
+            }
+
+
+        }
+
+    }
+
+    .activeNavbar {
+        top: 6rem;
+
+    }
+
+    .socialIcons {
+        display: none;
+
+    }
+
+    .toggleNavbar {
+        color:black;
+        font-size: 25px;
+
+        &:hover {
+            .icon {
+                color: black;
+            }
+
+        }
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 769px) {
+    .menuDiv {
+        .menuLists {
+            display: flex;
+            flex-direction: row;
+            padding: 0 .5rem;
+
+            .navItem {
+                padding: 0 .5rem;
+
+                .menuLink {
+                    color:black;
+                    font-size: 14px;
+
+                    &:hover{
+                        color: var(--secHoveerColor);
+                    }
+                }
+            }
+        }
+    }
+
+     .closeNavbar, .toggleNavbar {
+        display: none;
+    }
+
+     .socialIcons {
+        gap: .5rem;
+
+        .icon{
+             color: white;
+             font-size: 18px;
+
+         }
+     }
+}
+
+@media screen and (min-width: 1240px){
+    .headernav{
+        padding: 1rem 8.5rem;
+
+        .menuLists{
+            padding: 0 1rem;
+
+            .navItem{
+                padding: 0 1rem;
+
+                .menuLink {
+                    color: black;
+                    font-size: 20px;
+                    font-family: bold;
+
+                   
+                }
+            }
+        }
+        .socialIcons {
+            .icon{
+                 font-size: 22px;
+    
+             }
+         }
+    }
+}
+
+.btn1 {
+    padding: .6rem 1.5rem;
+    font-size: 16px;
+    background: paleturquoise;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+     &:hover{
+        background : white ;
+        color: var(--primaryColor);
+        border: 2px solid white ;
+      }
+
+
+  }
+  .btn1 a{
+    font-size: 20px;
+    color:black;
+    font-weight: 500;
+    font-family: bold;
+  }

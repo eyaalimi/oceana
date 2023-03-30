@@ -1,0 +1,219 @@
+:root{
+    --primaryColor: #3ab3a7 ; 
+    --primaryHover : #0c988a ; 
+    --secondaryColor : #059789 ; 
+    --secHoveerColor : #253b53  ;
+    --greyColor : #f7f7f7 ; 
+  }
+
+.home {
+    height: 150vh;
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background:  url('../../Assets/hero3.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-size: no-repeat;
+    display: flex;
+    align-items: center;
+    row-gap: 3rem;
+
+    .cardDiv{
+      position: relative;
+      padding: 2rem 1rem;
+      background:white;
+      border-radius: 10px;
+      gap: 1rem;
+
+      label{
+        display: block;
+        color: black;
+        padding-bottom: 10px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .label_total{
+        justify-content: space-between;
+        align-items: center;
+        .total{
+          color: black;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .input{
+        height: 40px;
+        padding: 0 1rem;
+        background: whitesmoke;
+        border-radius: 3rem;
+
+        input{
+          background: none;
+          border: none;
+          outline: none;
+          width: 100%;
+          font-size: 13px;
+          font-weight: 500;
+
+          &::placeholder{
+            font-size: 13px;
+            
+          }
+        }
+
+        .icon{
+          font-size: 18px;
+          color: black;
+          margin-left: 10px
+        }
+
+        .input[type=range]{
+          background: blue;
+        }
+      }
+
+      .searchOptions{
+        position: absolute;
+        background: paleturquoise;
+        width: max-content;
+        bottom: -0.7rem;
+        column-gap: .8rem;
+        padding: 5px 1rem;
+        border-radius: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+          background: bisque;
+        }
+        .icon{
+          font-size: 18px;
+        }
+
+        span{
+          font-size: 13px;
+        }
+      }
+    }
+    
+
+    .overlay{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgb(47,106,127);
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      mix-blend-mode: hard-light;
+    }
+
+    
+    .spanText{
+      color:white ;
+      font-weight: 500;
+    }
+    .homeTitle{
+      color: white;
+      padding: 2rem 0;
+      font-size: 40px ;
+
+      strong{
+        font-weight: 800;
+      }
+      
+    }
+
+    .btn{
+      border: 2px solid white;
+      color: white;
+      font-size: 13px;
+      transition: .3s ;
+      width: max-content;
+      &:hover{
+        background : white ;
+        color: var(--primaryColor);
+        border: 2px solid white ;
+      }
+
+
+    }
+  
+   
+  }
+
+@media screen and (min-width : 690px){
+  .home{
+
+    .homeText{
+      transform: translateY(5rem);
+    }
+    .spanText{
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .homeTitle{
+      color: white ;
+      padding: 2rem 0;
+      font-size: 45px ;
+    }
+
+    .btn{
+      border: 2px solid white ;
+      color: white ;
+      font-size: 15px;
+      transition: .3s ;
+    }
+  }
+
+}
+
+@media screen and (min-width : 840px){
+  .home{
+    .homeText{
+      transform: translateX(10rem);
+    }
+  }
+}
+  
+@media screen and (min-width : 1240px){
+  .home{
+    height: 100vh;
+    .homeText{
+      transform: translateX(20rem);
+
+      .spanText{
+        font-size: 20px;
+      }
+      .homeTitle{
+        font-size: 50px ;
+      }
+      .btn{
+        font-size: 22px;
+        
+      }
+      .cardDiv{
+        
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3,1fr);
+        .input{
+          margin-bottom: 1rem;
+        }
+
+        .searchOptions{
+          bottom: -1rem;
+          padding: 8px 1rem;
+
+          span{
+            font-size: 17px;
+          }
+        }
+      }   
+    }
+  }
+}
+
+
