@@ -20,7 +20,7 @@ function Contact(){
     <>
     
         <div className="containercontact">
-            <h2 className="--text-center">Contactez Nous</h2>
+            <h2 className="--text-center">Contact us</h2>
             <form ref={form} onSubmit={sendEmail} className="--form-control--card --flex-center --dir-column">
                 <input type="text" placeholder='Nom' name='user_name'  required/>
                 <input type="email" placeholder='xyz@exemple.com' name='user_email' required/>
