@@ -9,6 +9,7 @@ import {FaFacebook} from 'react-icons/fa'
 import {AiFillInstagram} from 'react-icons/ai'
 import {TiSocialTwitter} from 'react-icons/ti'
 import {BsPinterest} from 'react-icons/bs'
+import About from '../../pages/About'
 
 const Footer = () => {
 
@@ -75,7 +76,7 @@ const Footer = () => {
 
             <div className="footerLinks">
               <ul>
-                <li>About US </li>
+                <li> <a href ="/about">About US</a> </li>
                 <li>Our Team </li>
                 <li>Gallery </li>
                 <li>Blog </li>

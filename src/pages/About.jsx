@@ -1,9 +1,18 @@
 import React from 'react'
+import Hero from '../Components/Hero'
+import aboutImg from '../Assets/hero6.jpg'
+import AboutUs from '../Components/AboutUs'
 
 function About(){
   return (
     <>
-    <h1>hello im About</h1>
+    <Hero 
+    cName="hero"
+    heroImg={aboutImg}
+    title="Votre Voyage c'est notre mission"
+    />
+     <AboutUs/>
+   
     </>
   )
 }

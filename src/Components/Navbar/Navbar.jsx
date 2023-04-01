@@ -11,6 +11,7 @@ import { NavLink , Link } from 'react-router-dom'
 
 
 import { Button } from 'react-bootstrap'
+import Review from '../Review/Review'
 
 
 
@@ -49,7 +50,7 @@ const Navbar = () => {
                         <a href="/tours" onClick={removeNavBar} className="menuLink">Visites</a> 
                     </li>
                     <li className="navItem">
-                        <a href="/blog" onClick={removeNavBar} className="menuLink">Blog</a>
+                        <a href="/blog"o nClick={removeNavBar} className="menuLink">Blog</a>
                     </li>
                     <li className="navItem">
                         <a href="/hotels" onClick={removeNavBar} className="menuLink">Hotels</a>
